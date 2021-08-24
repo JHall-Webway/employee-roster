@@ -1,5 +1,5 @@
 const inquirer = require('inquirer');
-const buildSite = require('./src/site-template')
+const writeFile = require('./src/site-template')
 
 employeeInput = employeeArr => {
     if (!employeeArr) {
@@ -79,4 +79,4 @@ employeeInput = employeeArr => {
 };
 
 employeeInput()
-    .then(ans => buildSite(ans));
+    .then(ans => writeFile(ans));
